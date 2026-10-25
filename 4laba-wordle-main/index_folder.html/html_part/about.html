@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про автора</title>
+    <!-- Усі стилі обов'язково мають бути всередині head -->
+    <link rel="stylesheet" href="../css_part/style.css">
+    <link rel="stylesheet" href="../css_part/memes.css">
+    <link rel="stylesheet" href="../css_part/signin.css">
+</head>
+<body>
+
+    <!-- 1. Чекбокс і кнопка Sign In на чистому CSS -->
+    <input type="checkbox" id="modal-toggle" class="modal-checkbox">
+    <label for="modal-toggle" class="signin-btn">SIGN IN</label>
+
+    <h1>Це сторінка про автора!</h1>
+
+    <img src="../pictures_archive/1486189586446155888.webp" alt="лайк підписка колокіл" class="like-subscribe-bell">
+
+    <!-- 2. Модальне вікно (з'являється, коли натиснуто кнопку SIGN IN завдяки CSS) -->
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <label for="modal-toggle" class="close-modal">&times;</label>
+            <h2>Авторизація</h2>
+            <form>
+                <label class="form-label" for="username">Логін або Email:</label>
+                <input type="text" id="username" required placeholder="Введіть логін">
+                
+                <label class="form-label" for="password">Пароль:</label>
+                <input type="password" id="password" required placeholder="Введіть пароль">
+                
+                <button type="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
