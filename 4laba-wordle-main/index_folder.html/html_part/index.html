@@ -12,7 +12,7 @@
 
     <!-- 1. Чекбокс і кнопка Sign In на чистому CSS -->
     <input type="checkbox" id="modal-toggle" class="modal-checkbox">
-    <label for="modal-toggle" class="signin-btn">SIGN IN</label>
+    <label for="modal-toggle" class="signin-btn" id="signin-btn">SIGN IN</label>
 
     <div id="top-nav"></div>
 
@@ -90,7 +90,7 @@
         <div class="modal-content">
             <label for="modal-toggle" class="close-modal">&times;</label>
             <h2>Авторизація</h2>
-            <form>
+            <form onsubmit="login(event)">
                 <label class="form-label" for="username">Логін або Email:</label>
                 <input type="text" id="username" required placeholder="Введіть логін">
                 
@@ -102,5 +102,6 @@
         </div>
     </div>
 
+<script src="../scripts/script.js"></script>
 </body>
 </html>
